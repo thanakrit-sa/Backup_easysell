@@ -62698,3 +62698,17 @@ body {
 @media (max-width: 425px) {
   .offcanvas-mobile {
     width: 90% !important; } }
+
+textarea{
+  resize: none;
+}
+
+.menu-item-hover > .menu-link > .svg-icon i{
+  color: #6993FF;
+}
+
+@media (min-width: 992px){
+  body[data-header-scroll="on"] .topbar .topbar-item .text-white {
+    color: #6993FD !important;
+  }
+}
