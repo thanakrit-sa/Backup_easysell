@@ -69,9 +69,9 @@
           <div class="separator separator-solid my-7"></div>
 
           <div class="d-flex align-items-center flex-wrap">
-            <div class="d-flex align-items-center flex-lg-fill mr-5 my-1">
+            <div class="col-6 col-md-3 d-flex align-items-center mb-2">
               <span class="mr-4">
-                <i class="flaticon-piggy-bank icon-2x text-muted font-weight-bold"></i>
+                <i class="fab fa-bitcoin icon-2x text-muted font-weight-bold"></i>
               </span>
               <div class="d-flex flex-column text-dark-75">
                 <span class="font-weight-bolder font-size-sm">ยอดรวมทั้งหมด</span>
@@ -79,33 +79,37 @@
               </div>
             </div>
 
-            <div class="d-flex align-items-center flex-lg-fill mr-5 my-1">
+            <div class="col-6 col-md-3 d-flex align-items-center mb-2">
               <span class="mr-4">
-                <i class="flaticon-confetti icon-2x text-muted font-weight-bold"></i>
+                <i class="fab fa-shopify icon-2x text-muted font-weight-bold"></i>
               </span>
               <div class="d-flex flex-column text-dark-75">
-                <span class="font-weight-bolder font-size-sm">สั่งซื้อทั้งหมด</span>
+                <span class="font-weight-bolder font-size-sm">ยอดสั่งซื้อทั้งหมด</span>
                 <span class="font-weight-bolder font-size-h5">1,700</span>
               </div>
             </div>
 
-            <div class="d-flex align-items-center flex-lg-fill mr-5 my-1">
+            <div class="col-6 col-md-3 d-flex align-items-center mb-2">
               <span class="mr-4">
-                <i class="flaticon-file-2 icon-2x text-muted font-weight-bold"></i>
+                <i class="far fa-address-card icon-2x text-muted font-weight-bold"></i>
               </span>
-              <div class="d-flex flex-column flex-lg-fill">
-                <span class="text-dark-75 font-weight-bolder font-size-sm">73 Tasks</span>
-                <a href="#" class="text-primary font-weight-bolder">View</a>
+              <div class="d-flex flex-column">
+                <span class="text-dark-75 font-weight-bolder font-size-sm">ข้อมูลติดต่อ</span>
+                <a href="javascript:;" class="text-primary font-weight-bolder" data-toggle="modal" data-target="#modal_address">
+                  Setting
+                </a>
               </div>
             </div>
 
-            <div class="d-flex align-items-center flex-lg-fill mr-5 my-1">
+            <div class="col-6 col-md-3 d-flex align-items-center mb-2">
               <span class="mr-4">
-                <i class="flaticon-chat-1 icon-2x text-muted font-weight-bold"></i>
+                <i class="fab fa-cc-visa icon-2x text-muted font-weight-bold"></i>
               </span>
-              <div class="d-flex flex-column">
-                <span class="text-dark-75 font-weight-bolder font-size-sm">648 Comments</span>
-                <a href="#" class="text-primary font-weight-bolder">View</a>
+              <div class="d-flex flex-column flex-lg-fill">
+                <span class="text-dark-75 font-weight-bolder font-size-sm">ข้อมูลธนาคาร</span>
+                <a href="javascript:;" class="text-primary font-weight-bolder" data-toggle="modal" data-target="#modal_bank">
+                  Setting
+                </a>
               </div>
             </div>
           </div>
@@ -231,6 +235,12 @@
                           <textarea class="form-control" rows="5" name='tags3' placeholder="คำตอบ"></textarea>
                         </div>
                       </div>
+                      <div class="row">
+                        <div class="col-12 text-right">
+                          <div class="separator separator-solid mb-5"></div>
+                          <button type="reset" class="btn btn-primary">บันทึกข้อมูล</button>
+                        </div>
+                      </div>
                     </form>
                   </div>
                 </div>
@@ -318,6 +328,12 @@
                           <textarea class="form-control" rows="5" name='tags3' placeholder="คำตอบ"></textarea>
                         </div>
                       </div>
+                      <div class="row">
+                        <div class="col-12 text-right">
+                          <div class="separator separator-solid mb-5"></div>
+                          <button type="reset" class="btn btn-primary">บันทึกข้อมูล</button>
+                        </div>
+                      </div>
                     </form>
                   </div>
                 </div>
@@ -391,8 +407,14 @@
                           </div>
                         </div>
                       </div>
+                      <div class="row">
+                        <div class="col-12 text-right">
+                          <div class="separator separator-solid mb-5"></div>
+                          <button type="reset" class="btn btn-primary">บันทึกข้อมูล</button>
+                        </div>
+                      </div>
 
-                      <div class="separator separator-dashed separator-border-2 separator-danger mb-8"></div>
+                      <div class="separator separator-dashed separator-border-2 separator-danger mb-8 mt-5"></div>
 
                       <div class="form-group row">
                         <div class="col-12 col-md-6">
@@ -463,6 +485,14 @@
                           </div>
                         </div>
                       </div>
+                      <div class="row">
+                        <div class="col-12 text-right">
+                          <div class="separator separator-solid mb-5"></div>
+                          <button type="reset" class="btn btn-primary">บันทึกข้อมูล</button>
+                        </div>
+                      </div>
+
+                      <div class="separator separator-dashed separator-border-2 separator-danger mb-8 mt-5"></div>
 
                       <div class="form-group row">
                         <a href="javascript:;" class="btn btn-block btn-light-primary btn-pill">โหลดข้อมูลเพิ่ม</a>
@@ -501,6 +531,12 @@
                           <textarea class="form-control" rows="5" name='tags3' placeholder="คำตอบ"></textarea>
                         </div>
                       </div>
+                      <div class="row">
+                        <div class="col-12 text-right">
+                          <div class="separator separator-solid mb-5"></div>
+                          <button type="reset" class="btn btn-primary">บันทึกข้อมูล</button>
+                        </div>
+                      </div>
                     </form>
                   </div>
                 </div>
@@ -514,6 +550,74 @@
   </div>
 </div>
 
+<div class="modal fade" id="modal_address" tabindex="-1" role="dialog" aria-labelledby="modal_address" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">ข้อมูลติดต่อ</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <i aria-hidden="true" class="ki ki-close"></i>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form class="form">
+          <div class="form-group row">
+            <div class="col-12">
+              <label>ข้อมูลติดต่อ</label>
+              <textarea class="form-control" rows="5" placeholder="ข้อมูลติดต่อ"></textarea>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-light-danger font-weight-bold" data-dismiss="modal">ยกเลิก</button>
+        <button type="button" class="btn btn-primary font-weight-bold">บันทึกข้อมูล</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modal_bank" tabindex="-1" role="dialog" aria-labelledby="modal_bank" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">ข้อมูลธนาคาร</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <i aria-hidden="true" class="ki ki-close"></i>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form class="form">
+          <div class="row">
+            <div class="col-12 col-md-4 mb-5">
+              <label>ชื่อธนาคาร</label>
+              <input type="text" class="form-control"  placeholder="Enter email"/>
+            </div>
+            <div class="col-12 col-md-4 mb-5">
+              <label>ชื่อเจ้าของบัญชี</label>
+              <input type="text" class="form-control"  placeholder="ชื่อเจ้าของบัญชี"/>
+            </div>
+            <div class="col-12 col-md-4 mb-5">
+              <label>เลขที่บัญชี</label>
+              <input type="text" class="form-control"  placeholder="เลขที่บัญชี"/>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <a href="javascript:;" class="btn btn-success font-weight-bolder">
+                <i class="fas fa-plus mr-2"></i>เพิ่มจำนวนธนาคาร
+              </a>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-light-danger font-weight-bold" data-dismiss="modal">ยกเลิก</button>
+        <button type="button" class="btn btn-primary font-weight-bold">บันทึกข้อมูล</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 <div class="modal fade" id="modal_warehouse" tabindex="-1" role="dialog" aria-labelledby="modal_warehouse" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered modal-lg" role="document">

@@ -38,7 +38,7 @@
 
             <li class="menu-item menu-item-submenu menu-item-rel" data-menu-toggle="click" aria-haspopup="true">
               <a href="javascript:;" class="menu-link menu-toggle text-hover-primary">
-                <span class="menu-text">ฟังก์ชั่นการทำงาน</span>
+                <span class="menu-text">ร้านค้า</span>
                 <span class="menu-desc"></span>
                 <i class="menu-arrow"></i>
               </a>
@@ -69,12 +69,6 @@
                           <a href="facebook_comments.php" class="menu-link">
                             <i class="menu-bullet menu-bullet-dot"><span></span></i>
                             <span class="menu-text">Comments (ใช้กับทุก Pages)</span>
-                          </a>
-                        </li>
-                        <li class="menu-item" aria-haspopup="true">
-                          <a href="facebook_live.php" class="menu-link">
-                            <i class="menu-bullet menu-bullet-dot"><span></span></i>
-                            <span class="menu-text">Live (ใช้กับทุก Pages)</span>
                           </a>
                         </li>
                       </ul>
@@ -121,12 +115,37 @@
                 </ul>
               </div>
             </li>
+
+            <li class="menu-item" aria-haspopup="true">
+              <a href="broadcast.php" class="menu-link">
+                <span class="menu-text">บรอดแคสต์</span>
+              </a>
+            </li>
+
+            <li class="menu-item" aria-haspopup="true">
+              <a href="list_order.php" class="menu-link">
+                <span class="menu-text">รายการสั่งซื้อสินค้า</span>
+              </a>
+            </li>
+
+            <li class="menu-item" aria-haspopup="true">
+              <a href="package.php" class="menu-link">
+                <span class="menu-text">แพ็คเกจ</span>
+              </a>
+            </li>
           </ul>
         </div>
       </div>
     </div>
 
     <div class="topbar">
+      <!-- <div class="dropdown">
+        <div class="topbar-item">
+          <div class="btn btn-icon btn-hover-transparent-white btn-lg mr-2">
+            <i class="fas fa-user-clock"></i>
+          </div>
+        </div>
+      </div> -->
       <div class="dropdown">
         <a href="javascript:;" class="d-flex topbar-item" data-toggle="dropdown">
           <div class="d-flex flex-column text-right">

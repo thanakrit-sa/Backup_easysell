@@ -66,13 +66,15 @@
                     <form class="form" id="kt_form">
                       <div class="pb-5" data-wizard-type="step-content" data-wizard-state="current">
                         <h3 class="mb-10 font-weight-bold text-dark">ตั้งค่าคลังสินค้า</h3>
-                        <div class="form-group">
-                          <label>ชื่อคลังสินค้า</label>
-                          <input type="text" class="form-control form-control-solid" name="address1" placeholder="ชื่อคลังสินค้า" />
+                        <div class="form-group row">
+                          <div class="col-12 col-md-6">
+                            <label>ชื่อคลังสินค้า</label>
+                            <input type="text" class="form-control form-control-solid" name="address1" placeholder="ชื่อคลังสินค้า" />
+                          </div>
                         </div>
-                        <div class="row">
-                          <div class="col-xl-6">
-                            <div class="form-group">
+                        <div class="form-group">
+                          <div class="row">
+                            <div class="col-12 col-md-6">
                               <label>ประเภทคลังสินค้า</label>
                               <select name="country" class="form-control form-control-solid">
                                 <option value="">-- Select --</option>
@@ -92,9 +94,7 @@
                                 <option value="AU" selected>Australia</option>
                               </select>
                             </div>
-                          </div>
-                          <div class="col-xl-6">
-                            <div class="form-group">
+                            <div class="col-12 col-md-6">
                               <label>&nbsp;</label>
                               <input type="text" class="form-control form-control-solid" name="state" placeholder="อื่นๆ"/>
                             </div>
@@ -105,137 +105,120 @@
                       <div class="pb-5" data-wizard-type="step-content">
                         <h4 class="mb-10 font-weight-bold text-dark">ตั้งค่าการจัดส่ง</h4>
 
-                        <div class="row">
-                          <div class="col-6">
-                            <div class="form-group">
-                              <label>ชื่อบริษัทขนส่ง</label>
-                              <select name="country" class="form-control form-control-solid">
-                                <option value="">-- Select --</option>
-                                <option value="เคอรี่" selected>เคอรี่</option>
-                                <option value="ไปรษณีย์ไทย">ไปรษณีย์ไทย</option>
-                              </select>
-                            </div>
+                        <div class="form-group row">
+                          <div class="col-12 col-md-6">
+                            <label>ชื่อบริษัทขนส่ง</label>
+                            <select name="country" class="form-control form-control-solid">
+                              <option value="">-- Select --</option>
+                              <option value="เคอรี่" selected>เคอรี่</option>
+                              <option value="ไปรษณีย์ไทย">ไปรษณีย์ไทย</option>
+                            </select>
                           </div>
                         </div>
 
-
-
-                        <div class="form-group">
-                          <div class="radio-inline">
-                            <label class="radio">
-                              <input name="communication" type="radio" class="is-valid">
-                              <span></span>ค่าจัดส่งคงที่
-                            </label>
-                            <label class="radio">
-                              <input name="communication" type="radio">
-                              <span></span>ค่าจัดส่งตามน้ำหนัก
-                            </label>
-                            <label class="radio">
-                              <input name="communication" type="radio">
-                              <span></span>ค่าจัดส่งตามจำนวน
-                            </label>
-                            <label class="radio">
-                              <input name="communication" type="radio">
-                              <span></span>เก็บเงินปลายทาง
-                            </label>
+                        <div class="form-group row">
+                          <div class="col-12 col-md-6">
+                            <label>ค่าจัดส่ง</label>
+                            <select name="country" class="form-control form-control-solid">
+                              <option value="">-- Select --</option>
+                              <option value="ฟรีทุกการสั่งซื้อ" selected>ฟรีทุกการสั่งซื้อ</option>
+                              <option value="ค่าจัดส่งคงที่">ค่าจัดส่งคงที่</option>
+                              <option value="ค่าจัดส่งตามน้ำหนัก">ค่าจัดส่งตามน้ำหนัก</option>
+                              <option value="ค่าจัดส่งตามจำนวน">ค่าจัดส่งตามจำนวน</option>
+                              <option value="เก็บเงินปลายทาง">เก็บเงินปลายทาง</option>
+                            </select>
                           </div>
                         </div>
 
-                        <div class="form-group delivery_1" style="display: none;">
+                        <div class="form-group row delivery_1">
+                          <div class="col-12 col-md-6">
+                            <input type="text" class="form-control form-control-solid" name="" placeholder="ค่าจัดส่ง"/>
+                          </div>
+                        </div>
+
+                        <div class="delivery_2">
                           <div class="row">
-                            <div class="col-6">
-                              <input type="text" class="form-control form-control-solid" name="" placeholder="ค่าจัดส่ง"/>
-                            </div>
-                          </div>
-                        </div>
-
-                        <div class="form-group delivery_2">
-                          <div class="row">
-                            <div class="col-3">
+                            <div class="col-6 col-md-3 mb-5">
                               <input type="text" class="form-control form-control-solid" name="" placeholder="น้ำหนักต่ำสุด"/>
                             </div>
-                            <div class="col-3">
+                            <div class="col-6 col-md-3 mb-5">
                               <input type="text" class="form-control form-control-solid" name="" placeholder="น้ำหนักสูงสุด"/>
                             </div>
-                            <div class="col-3">
+                            <div class="col-6 col-md-3 mb-5">
                               <input type="text" class="form-control form-control-solid" name="" placeholder="ค่าจัดส่ง"/>
                             </div>
-                            <div class="col-3">
+                            <div class="col-6 col-md-3 mb-5">
                               <a href="#" class="btn btn-success btn-block font-weight-bolder">
                                 <i class="fas fa-plus mr-2"></i>เพิ่มการจัดส่ง
                               </a>
                             </div>
                           </div>
-                          <div class="row mt-10">
+                          <div class="row">
                             <div class="col-12">
                               <div class="table-responsive">
                                 <table class="table table-bordered">
-                                  <thead>
-                                    <tr>
-                                      <th>#</th>
-                                      <th>น้ำหนักต่ำสุด</th>
-                                      <th>น้ำหนักสูงสุด</th>
-                                      <th>ค่าจัดส่ง</th>
-                                      <th>แก้ไขล่าสุด</th>
-                                      <th>ลบข้อมูล</th>
-                                    </tr>
-                                  </thead>
-                                  <tbody>
-                                    <tr>
-                                      <td>1</td>
-                                      <td>Cell</td>
-                                      <td>Cell</td>
-                                      <td>Cell</td>
-                                      <td>Cell</td>
-                                      <td>
-                                        <a href="#" class="btn btn-xs btn-icon btn-light-danger">
-                                          <i class="flaticon-delete"></i>
-                                        </a>
-                                      </td>
-                                    </tr>
-                                    <tr>
-                                      <td>2</td>
-                                      <td>Cell</td>
-                                      <td>Cell</td>
-                                      <td>Cell</td>
-                                      <td>Cell</td>
-                                      <td>
-                                        <a href="#" class="btn btn-xs btn-icon btn-light-danger">
-                                          <i class="flaticon-delete"></i>
-                                        </a>
-                                      </td>
-                                    </tr>
-                                    <tr>
-                                      <td>3</td>
-                                      <td>Cell</td>
-                                      <td>Cell</td>
-                                      <td>Cell</td>
-                                      <td>Cell</td>
-                                      <td>
-                                        <a href="#" class="btn btn-xs btn-icon btn-light-danger">
-                                          <i class="flaticon-delete"></i>
-                                        </a>
-                                      </td>
-                                    </tr>
-                                  </tbody>
+                                  <tr>
+                                    <th>#</th>
+                                    <th>น้ำหนักต่ำสุด</th>
+                                    <th>น้ำหนักสูงสุด</th>
+                                    <th>ค่าจัดส่ง</th>
+                                    <th>แก้ไขล่าสุด</th>
+                                    <th>ลบข้อมูล</th>
+                                  </tr>
+                                  <tr>
+                                    <td>1</td>
+                                    <td>Cell</td>
+                                    <td>Cell</td>
+                                    <td>Cell</td>
+                                    <td>Cell</td>
+                                    <td>
+                                      <a href="#" class="btn btn-xs btn-icon btn-light-danger">
+                                        <i class="flaticon-delete"></i>
+                                      </a>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>2</td>
+                                    <td>Cell</td>
+                                    <td>Cell</td>
+                                    <td>Cell</td>
+                                    <td>Cell</td>
+                                    <td>
+                                      <a href="#" class="btn btn-xs btn-icon btn-light-danger">
+                                        <i class="flaticon-delete"></i>
+                                      </a>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>3</td>
+                                    <td>Cell</td>
+                                    <td>Cell</td>
+                                    <td>Cell</td>
+                                    <td>Cell</td>
+                                    <td>
+                                      <a href="#" class="btn btn-xs btn-icon btn-light-danger">
+                                        <i class="flaticon-delete"></i>
+                                      </a>
+                                    </td>
+                                  </tr>
                                 </table>
                               </div>
                             </div>
                           </div>
                         </div>
 
-                        <div class="form-group delivery_3" style="display: none;">
+                        <div class="delivery_3">
                           <div class="row">
-                            <div class="col-3">
-                              <input type="text" class="form-control form-control-solid" name="" placeholder="จำนวนต่ำสุด"/>
+                            <div class="col-6 col-md-3 mb-5">
+                              <input type="text" class="form-control form-control-solid" name="" placeholder="น้ำหนักต่ำสุด"/>
                             </div>
-                            <div class="col-3">
-                              <input type="text" class="form-control form-control-solid" name="" placeholder="จำนวนสูงสุด"/>
+                            <div class="col-6 col-md-3 mb-5">
+                              <input type="text" class="form-control form-control-solid" name="" placeholder="น้ำหนักสูงสุด"/>
                             </div>
-                            <div class="col-3">
+                            <div class="col-6 col-md-3 mb-5">
                               <input type="text" class="form-control form-control-solid" name="" placeholder="ค่าจัดส่ง"/>
                             </div>
-                            <div class="col-3">
+                            <div class="col-6 col-md-3 mb-5">
                               <a href="#" class="btn btn-success btn-block font-weight-bolder">
                                 <i class="fas fa-plus mr-2"></i>เพิ่มการจัดส่ง
                               </a>
@@ -243,14 +226,11 @@
                           </div>
                         </div>
 
-                        <div class="form-group delivery_4" style="display: none;">
-                          <div class="row">
-                            <div class="col-6">
-                              <input type="text" class="form-control form-control-solid" name="" placeholder="ค่าจัดส่ง"/>
-                            </div>
+                        <div class="row delivery_4">
+                          <div class="col-12 col-md-6">
+                            <input type="text" class="form-control form-control-solid" name="" placeholder="ค่าจัดส่ง"/>
                           </div>
                         </div>
-
                       </div>
 
                       <div class="pb-5" data-wizard-type="step-content">

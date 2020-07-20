@@ -45,9 +45,17 @@
           <div class="card card-custom gutter-b card-stretch">
             <div class="card-body text-center pt-4">
               <div class="d-flex justify-content-end">
-                <a href="#" class="btn btn-xs btn-icon btn-light-danger">
-                  <i class="flaticon-delete"></i>
-                </a>
+                <div class="col-6 text-left p-0">
+                  <a href="javascript:;" class="btn btn-xs btn-icon btn-light-warning pulse pulse-warning">
+                    <i class="fas fa-video"></i>
+                    <span class="pulse-ring"></span>
+                  </a>
+                </div>
+                <div class="col-6 text-right p-0">
+                  <a href="#" class="btn btn-xs btn-icon btn-light-danger">
+                    <i class="flaticon-delete"></i>
+                  </a>
+                </div>
               </div>
               <div class="mt-7">
                 <div class="symbol symbol-circle symbol-lg-75">
@@ -74,9 +82,11 @@
           <div class="card card-custom gutter-b card-stretch">
             <div class="card-body text-center pt-4">
               <div class="d-flex justify-content-end">
-                <a href="#" class="btn btn-xs btn-icon btn-light-danger">
-                  <i class="flaticon-delete"></i>
-                </a>
+                <div class="col-6 text-right p-0">
+                  <a href="#" class="btn btn-xs btn-icon btn-light-danger">
+                    <i class="flaticon-delete"></i>
+                  </a>
+                </div>
               </div>
               <div class="mt-7">
                 <div class="symbol symbol-circle symbol-lg-75">
@@ -103,9 +113,11 @@
           <div class="card card-custom gutter-b card-stretch">
             <div class="card-body text-center pt-4">
               <div class="d-flex justify-content-end">
-                <a href="#" class="btn btn-xs btn-icon btn-light-danger">
-                  <i class="flaticon-delete"></i>
-                </a>
+                <div class="col-6 text-right p-0">
+                  <a href="#" class="btn btn-xs btn-icon btn-light-danger">
+                    <i class="flaticon-delete"></i>
+                  </a>
+                </div>
               </div>
               <div class="mt-7">
                 <div class="symbol symbol-circle symbol-lg-75">
@@ -132,9 +144,11 @@
           <div class="card card-custom gutter-b card-stretch">
             <div class="card-body text-center pt-4">
               <div class="d-flex justify-content-end">
-                <a href="#" class="btn btn-xs btn-icon btn-light-danger">
-                  <i class="flaticon-delete"></i>
-                </a>
+                <div class="col-6 text-right p-0">
+                  <a href="#" class="btn btn-xs btn-icon btn-light-danger">
+                    <i class="flaticon-delete"></i>
+                  </a>
+                </div>
               </div>
               <div class="mt-7">
                 <div class="symbol symbol-circle symbol-lg-75">
@@ -161,9 +175,11 @@
           <div class="card card-custom gutter-b card-stretch">
             <div class="card-body text-center pt-4">
               <div class="d-flex justify-content-end">
-                <a href="#" class="btn btn-xs btn-icon btn-light-danger">
-                  <i class="flaticon-delete"></i>
-                </a>
+                <div class="col-6 text-right p-0">
+                  <a href="#" class="btn btn-xs btn-icon btn-light-danger">
+                    <i class="flaticon-delete"></i>
+                  </a>
+                </div>
               </div>
               <div class="mt-7">
                 <div class="symbol symbol-circle symbol-lg-75">
