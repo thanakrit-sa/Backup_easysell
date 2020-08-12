@@ -5,11 +5,11 @@
     <div class=" container  d-flex align-items-center justify-content-between flex-wrap flex-sm-nowrap">
       <div class="d-flex align-items-center flex-wrap mr-1">
         <div class="d-flex flex-column">
-          <h2 class="text-white font-weight-bold my-2 mr-5">รายการสั่งซื้อสินค้า</h2>
+          <h2 class="text-white font-weight-bold my-2 mr-5">บรอดแคสต์</h2>
           <div class="d-flex align-items-center font-weight-bold my-2">
             <a href="dashboard.php" class="opacity-75 hover-opacity-100"><i class="flaticon2-shelter text-white icon-1x"></i></a>
             <span class="label label-dot label-sm bg-white opacity-75 mx-3"></span>
-            <a href="list_order.php" class="text-white text-hover-white opacity-75 hover-opacity-100">รายการสั่งซื้อสินค้า</a>
+            <a href="broadcast.php" class="text-white text-hover-white opacity-75 hover-opacity-100">บรอดแคสต์</a>
           </div>
         </div>
       </div>
@@ -22,7 +22,12 @@
         <div class="col-12">
           <div class="card card-custom">
             <div class="card-header flex-wrap border-1 pt-6 pb-3">
-              &nbsp;
+              <div class="card-title">&nbsp;</div>
+              <div class="card-toolbar">
+                <a href="broadcast_add.php" class="btn btn-success font-weight-bolder">
+                  <i class="fas fa-plus mr-2"></i>เพิ่มบรอดแคสต์
+                </a>
+              </div>
             </div>
             <div class="card-body">
               <div class="mb-7">

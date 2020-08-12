@@ -7,13 +7,13 @@
     <div class="container d-flex align-items-center justify-content-between flex-wrap flex-sm-nowrap">
       <div class="d-flex align-items-center flex-wrap mr-1">
         <div class="d-flex flex-column">
-          <h2 class="text-white font-weight-bold my-2 mr-5">เพิ่มคลังสินค้า</h2>
+          <h2 class="text-white font-weight-bold my-2 mr-5">เพิ่มบรอดแคสต์</h2>
           <div class="d-flex align-items-center font-weight-bold my-2">
             <a href="dashboard.php" class="opacity-75 hover-opacity-100"><i class="flaticon2-shelter text-white icon-1x"></i></a>
             <span class="label label-dot label-sm bg-white opacity-75 mx-3"></span>
-            <a href="warehouse.php" class="text-white text-hover-white opacity-75 hover-opacity-100">คลังสินค้า</a>
+            <a href="broadcast.php" class="text-white text-hover-white opacity-75 hover-opacity-100">บรอดแคสต์</a>
             <span class="label label-dot label-sm bg-white opacity-75 mx-3"></span>
-            <a href="warehouse_add.php" class="text-white text-hover-white opacity-75 hover-opacity-100">เพิ่มคลังสินค้า</a>
+            <a href="broadcast_add.php" class="text-white text-hover-white opacity-75 hover-opacity-100">เพิ่มบรอดแคสต์</a>
           </div>
         </div>
       </div>
@@ -99,7 +99,7 @@
                             <label>ชื่อบริษัทขนส่ง</label>
                             <select name="company_shipping" class="form-control">
                               <option value="">-- Select --</option>
-                              <option value="เคอรี่">เคอรี่</option>
+                              <option value="เคอรี่" selected>เคอรี่</option>
                               <option value="ไปรษณีย์ไทย">ไปรษณีย์ไทย</option>
                             </select>
                           </div>

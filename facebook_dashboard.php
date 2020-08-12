@@ -338,7 +338,6 @@
                   </div>
                 </div>
               </div>
-
               <div class="form-group row reply_by_comments">
                 <div class="col-12">
                   <div class="alert alert-custom alert-outline-2x alert-outline-primary bg-primary-o-20">
@@ -356,7 +355,7 @@
                             <div class="col-12 col-md-6">
                               <span class="switch switch-sm switch-outline switch-icon switch-success">
                                 <label class="col-12 p-0">
-                                  <input type="radio" name="comment1" checked="checked">
+                                  <input type="checkbox" class="checkbox-comment checkbox-comment-111" data-comment-id="111" name="checkbox1" value="ปิดการใช้งาน" checked="checked">
                                   <span class="mr-5"></span>
                                   <p class="mt-1">ปิดการใช้งาน</p>
                                 </label>
@@ -365,7 +364,7 @@
                             <div class="col-12 col-md-6">
                               <span class="switch switch-sm switch-outline switch-icon switch-success">
                                 <label class="col-12 p-0">
-                                  <input type="radio" name="comment1">
+                                  <input type="checkbox" class="checkbox-comment checkbox-comment-111" data-comment-id="111" name="checkbox2" value="ตอบตามคีย์เวิร์ด">
                                   <span class="mr-5"></span>
                                   <p class="mt-1">ตอบตามคีย์เวิร์ด</p>
                                 </label>
@@ -374,7 +373,7 @@
                             <div class="col-12 col-md-6">
                               <span class="switch switch-sm switch-outline switch-icon switch-success">
                                 <label class="col-12 p-0">
-                                  <input type="radio" name="comment1">
+                                  <input type="checkbox" class="checkbox-comment checkbox-comment-111" data-comment-id="111" name="checkbox3" value="ตอบทุกคอมเมนต์">
                                   <span class="mr-5"></span>
                                   <p class="mt-1">ตอบทุกคอมเมนต์</p>
                                 </label>
@@ -383,9 +382,9 @@
                             <div class="col-12 col-md-6">
                               <span class="switch switch-sm switch-outline switch-icon switch-success">
                                 <label class="col-12 p-0">
-                                  <input type="radio" name="comment1">
+                                  <input type="checkbox" class="checkbox-comment checkbox-comment-111" data-comment-id="111" name="checkbox4" value="ดึงเข้าอินบ็อกซ์">
                                   <span class="mr-5"></span>
-                                  <p class="mt-1">ตอบทุกคอมเมนต์ + ดึงเข้าอินบ็อกซ์</p>
+                                  <p class="mt-1">ดึงเข้าอินบ็อกซ์</p>
                                 </label>
                               </span>
                             </div>
@@ -434,7 +433,7 @@
                             <div class="col-12 col-md-6">
                               <span class="switch switch-sm switch-outline switch-icon switch-success">
                                 <label class="col-12 p-0">
-                                  <input type="radio" name="comment2" checked="checked">
+                                  <input type="checkbox" class="checkbox-comment checkbox-comment-222" data-comment-id="222" name="checkbox1" value="ปิดการใช้งาน" checked="checked">
                                   <span class="mr-5"></span>
                                   <p class="mt-1">ปิดการใช้งาน</p>
                                 </label>
@@ -443,7 +442,7 @@
                             <div class="col-12 col-md-6">
                               <span class="switch switch-sm switch-outline switch-icon switch-success">
                                 <label class="col-12 p-0">
-                                  <input type="radio" name="comment2">
+                                  <input type="checkbox" class="checkbox-comment checkbox-comment-222" data-comment-id="222" name="checkbox2" value="ตอบตามคีย์เวิร์ด">
                                   <span class="mr-5"></span>
                                   <p class="mt-1">ตอบตามคีย์เวิร์ด</p>
                                 </label>
@@ -452,7 +451,7 @@
                             <div class="col-12 col-md-6">
                               <span class="switch switch-sm switch-outline switch-icon switch-success">
                                 <label class="col-12 p-0">
-                                  <input type="radio" name="comment2">
+                                  <input type="checkbox" class="checkbox-comment checkbox-comment-222" data-comment-id="222" name="checkbox3" value="ตอบทุกคอมเมนต์">
                                   <span class="mr-5"></span>
                                   <p class="mt-1">ตอบทุกคอมเมนต์</p>
                                 </label>
@@ -461,9 +460,9 @@
                             <div class="col-12 col-md-6">
                               <span class="switch switch-sm switch-outline switch-icon switch-success">
                                 <label class="col-12 p-0">
-                                  <input type="radio" name="comment2">
+                                  <input type="checkbox" class="checkbox-comment checkbox-comment-222" data-comment-id="222" name="checkbox4" value="ดึงเข้าอินบ็อกซ์">
                                   <span class="mr-5"></span>
-                                  <p class="mt-1">ตอบทุกคอมเมนต์ + ดึงเข้าอินบ็อกซ์</p>
+                                  <p class="mt-1">ดึงเข้าอินบ็อกซ์</p>
                                 </label>
                               </span>
                             </div>
@@ -471,7 +470,7 @@
                           <div class="row mt-5">
                             <div class="col-12 comments_keyword">
                               <div class="form-group">
-                                <input id="keyword_tag3" class="form-control tagify" name='tags3' placeholder="คีย์เวิร์ด" />
+                                <input id="keyword_tag2" class="form-control tagify" name='tags3' placeholder="คีย์เวิร์ด" />
                               </div>
                               <div class="form-group">
                                 <textarea class="form-control" rows="5" name='tags3' placeholder="คำตอบ"></textarea>
@@ -689,3 +688,19 @@ include('include/inc-footer.php');
 ?>
 
 <script src="assets/js/pages/crud/forms/widgets/tagify.js?v=7.0.6"></script>
+<script type="text/javascript">
+  $(".checkbox-comment").click(function() {
+    var comment_id = $(this).data('comment-id');
+    var comment_count = $(".checkbox-comment-"+comment_id+":checked").length;
+    if($(this).val() == "ปิดการใช้งาน"){
+      $(".checkbox-comment-"+comment_id+"[value!='ปิดการใช้งาน']").prop('checked', false);
+    }
+    else{
+      $(".checkbox-comment-"+comment_id+"[value='ปิดการใช้งาน']").prop('checked', false);
+    }
+
+    if(comment_count <= 0){
+      $(this).prop('checked', true);
+    }
+  });
+</script>

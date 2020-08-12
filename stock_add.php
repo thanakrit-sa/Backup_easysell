@@ -55,24 +55,24 @@
 
                 <div class="row justify-content-center my-10 px-8 my-lg-15 px-lg-10">
                   <div class="col-xl-12 col-xxl-7">
-                    <form class="form" id="kt_form">
+                    <form class="form" enctype="multipart/form-data" id="kt_form">
                       <div class="pb-5" data-wizard-type="step-content" data-wizard-state="current">
                         <h3 class="mb-10 font-weight-bold text-dark">ตั้งค่าสินค้า</h3>
                         <div class="form-group">
                           <label>ชื่อสินค้า</label>
-                          <input type="text" class="form-control form-control-solid" name="address1" placeholder="ชื่อสินค้า" />
+                          <input type="text" class="form-control" name="address1" placeholder="ชื่อสินค้า" />
                         </div>
                         <div class="row">
                           <div class="col-xl-6">
                             <div class="form-group">
                               <label>รหัสสินค้า</label>
-                              <input type="text" class="form-control form-control-solid" name="address1" placeholder="รหัสสินค้า" />
+                              <input type="text" class="form-control" name="address1" placeholder="รหัสสินค้า" />
                             </div>
                           </div>
                           <div class="col-xl-6">
                             <div class="form-group">
                               <label>ราคาสินค้า</label>
-                              <input type="text" class="form-control form-control-solid" name="state" placeholder="ราคาสินค้า"/>
+                              <input type="text" class="form-control" name="state" placeholder="ราคาสินค้า"/>
                             </div>
                           </div>
                         </div>
@@ -80,7 +80,7 @@
                           <div class="col-xl-6">
                             <div class="form-group">
                               <label>ประเภทสินค้า</label>
-                              <select name="country" class="form-control form-control-solid">
+                              <select name="country" class="form-control">
                                 <option value="">-- Select --</option>
                                 <option value="AF">Afghanistan</option>
                                 <option value="AX">Åland Islands</option>
@@ -102,7 +102,7 @@
                           <div class="col-xl-6">
                             <div class="form-group">
                               <label>&nbsp;</label>
-                              <input type="text" class="form-control form-control-solid" name="state" placeholder="อื่นๆ"/>
+                              <input type="text" class="form-control" name="state" placeholder="อื่นๆ"/>
                             </div>
                           </div>
                         </div>
@@ -110,7 +110,7 @@
                           <div class="col-xl-6">
                             <div class="form-group">
                               <label>สถานะการจัดส่ง</label>
-                              <select name="country" class="form-control form-control-solid">
+                              <select name="country" class="form-control">
                                 <option value="">-- Select --</option>
                                 <option value="พร้อมส่ง" selected>พร้อมส่ง</option>
                                 <option value="พรีออเดอร์">พรีออเดอร์</option>
@@ -120,7 +120,7 @@
                           <div class="col-xl-6">
                             <div class="form-group">
                               <label>&nbsp;</label>
-                              <input type="text" class="form-control form-control-solid" name="state" placeholder="ระบุจำนวนสินค้า"/>
+                              <input type="text" class="form-control" name="state" placeholder="ระบุจำนวนสินค้า"/>
                             </div>
                           </div>
                         </div>
@@ -185,3 +185,4 @@ include('include/inc-footer.php');
 
 <script src="assets/js/pages/custom/wizard/wizard-1.js?v=7.0.6"></script>
 <script src="assets/js/pages/crud/ktdatatable/base/data-ajax.js?v=7.0.6"></script>
+<script src="assets/js/pages/crud/file-upload/dropzone_stock.js"></script>

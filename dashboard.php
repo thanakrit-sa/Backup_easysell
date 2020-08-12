@@ -15,12 +15,13 @@
       </div>
     </div>
   </div>
-</div>
 
-<div class="d-flex flex-column-fluid">
-  <div class="container">
-    <div class="row">
 
+  <div class="d-flex flex-column-fluid">
+    <div class="container">
+      <div class="row">
+
+      </div>
     </div>
   </div>
 </div>

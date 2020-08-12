@@ -33,7 +33,7 @@
 							<h3>Sign Up</h3>
 							<div class="text-muted font-weight-bold">Enter your details to create your account</div>
 						</div>
-						<form class="form" action="index.php" method="post">
+						<form class="form" method="post" id="form-register">
 							<div class="form-group mb-5">
 								<input class="form-control form-control-solid h-auto" type="text" placeholder="Fullname" name="fullname" />
 							</div>
@@ -133,6 +133,6 @@
 	<script src="assets/plugins/global/plugins.bundle.js?v=7.0.6"></script>
 	<script src="assets/plugins/custom/prismjs/prismjs.bundle.js?v=7.0.6"></script>
 	<script src="assets/js/scripts.bundle.js?v=7.0.6"></script>
-	<script src="assets/js/pages/custom/login/login-general.js?v=7.0.6"></script>
+	<script src="assets/js/pages/custom/login/register.js"></script>
 </body>
 </html>

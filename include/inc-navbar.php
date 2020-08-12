@@ -123,12 +123,6 @@
             </li>
 
             <li class="menu-item" aria-haspopup="true">
-              <a href="list_order.php" class="menu-link">
-                <span class="menu-text">รายการสั่งซื้อสินค้า</span>
-              </a>
-            </li>
-
-            <li class="menu-item" aria-haspopup="true">
               <a href="package.php" class="menu-link">
                 <span class="menu-text">แพ็คเกจ</span>
               </a>
@@ -139,13 +133,20 @@
     </div>
 
     <div class="topbar">
-      <!-- <div class="dropdown">
+      <div class="dropdown">
         <div class="topbar-item">
-          <div class="btn btn-icon btn-hover-transparent-white btn-lg mr-2">
-            <i class="fas fa-user-clock"></i>
-          </div>
+          <a href="live_chat.php" class="btn btn-icon btn-hover-transparent-white mr-2 pulse pulse-warning" data-toggle="tooltip" data-placement="bottom" title="รายการแชทรวม">
+            <i class="fas fa-globe icon-lg"></i>
+            <span class="pulse-ring"></span>
+          </a>
+
+          <a href="list_order.php" class="btn btn-icon btn-hover-transparent-white mr-6 pulse pulse-danger" data-toggle="tooltip" data-placement="bottom" title="รายการสั่งซื้อสินค้า">
+            <i class="fas fa-clipboard-list icon-lg"></i>
+            <span class="pulse-ring"></span>
+          </a>
         </div>
-      </div> -->
+      </div>
+
       <div class="dropdown">
         <a href="javascript:;" class="d-flex topbar-item" data-toggle="dropdown">
           <div class="d-flex flex-column text-right">
@@ -156,32 +157,49 @@
             <img alt="Pic" src="assets/media/users/300_21.jpg">
           </div>
         </a>
-        <div class="dropdown-menu p-0 m-0 dropdown-menu-right dropdown-menu-anim-up dropdown-menu-lg p-0">
-          <div class="d-flex align-items-center p-8 rounded-top">
-            <div class="symbol symbol-md bg-light-primary mr-3 flex-shrink-0">
-              <img src="assets/media/users/300_21.jpg" alt=""/>
+
+        <div class="dropdown-menu p-0 m-0 dropdown-menu-right dropdown-menu-anim-up dropdown-menu-lg">
+          <div class="d-flex flex-column-fluid align-items-center px-5 py-7">
+            <div class="col-8 p-0">
+              <div class="d-flex flex-column-fluid align-items-center">
+                <div class="symbol symbol-md bg-light-primary mr-3 flex-shrink-0">
+                  <img src="assets/media/users/300_21.jpg" alt=""/>
+                </div>
+                <div class="d-flex flex-column">
+                  <span class="text-muted font-weight-bold">Admin</span>
+                  <span class="text-primary font-weight-bold">Nick Stone</span>
+                </div>
+              </div>
             </div>
-            <div class="d-flex flex-column">
-              <span class="text-muted font-weight-bold">Admin</span>
-              <span class="text-primary font-weight-bold">Nick Stone</span>
+            <div class="col-4 text-right p-0">
+              <a href="index.php" class="btn btn-light-danger font-weight-bold font-size-sm mt-2">ออกจากระบบ</a>
             </div>
           </div>
           <div class="separator separator-solid"></div>
-          <div class="navi navi-spacer-x-0 pt-5">
-            <a href="profile.php" class="navi-item px-8">
-              <div class="navi-link">
-                <div class="navi-icon mr-2">
-                  <i class="flaticon2-calendar-3 text-success"></i>
-                </div>
-                <div class="navi-text">
-                  <div class="font-weight-bold">My Profile</div>
-                  <div class="text-muted">Account settings and more</div>
-                </div>
-              </div>
-            </a>
-            <div class="navi-separator mt-3"></div>
-            <div class="navi-footer px-8 py-5">
-              <a href="index.php" class="btn btn-light-danger font-weight-bold">Sign Out</a>
+          <div class="row row-paddingless">
+            <div class="col-6">
+              <a href="#" class="d-block py-10 px-5 text-center text-dark-75 text-hover-white bg-hover-warning border-right border-bottom">
+                <i class="fas fa-clock icon-2x"></i>
+                <span class="d-block font-weight-bold font-size-h6 mt-4 mb-2">ระยะเวลาใช้งาน</span>
+              </a>
+            </div>
+            <div class="col-6">
+              <a href="profile.php" class="d-block py-10 px-5 text-center text-dark-75 text-hover-white bg-hover-success border-right border-bottom">
+                <i class="fas fa-user-alt icon-2x"></i>
+                <span class="d-block font-weight-bold font-size-h6 mt-4 mb-2">ข้อมูลส่วนตัว</span>
+              </a>
+            </div>
+            <div class="col-6">
+              <a href="recommend.php" class="d-block py-10 px-5 text-center text-dark-75 text-hover-white bg-hover-primary border-right border-bottom">
+                <i class="fas fa-book icon-2x"></i>
+                <span class="d-block font-weight-bold font-size-h6 mt-4 mb-2">แนะนำวิธีใช้งาน</span>
+              </a>
+            </div>
+            <div class="col-6">
+              <a href="feedback.php" class="d-block py-10 px-5 text-center text-dark-75 text-hover-white bg-hover-info border-right border-bottom">
+                <i class="fas fa-info-circle icon-2x"></i>
+                <span class="d-block font-weight-bold font-size-h6 mt-4 mb-2">แจ้งปัญหาใช้งาน</span>
+              </a>
             </div>
           </div>
         </div>
